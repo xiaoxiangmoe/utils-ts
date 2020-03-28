@@ -1,0 +1,21 @@
+
+# Created by https://www.gitignore.io/api/webstorm
+
+# User-specific stuff:
+.idea/
+.DS_Store
+
+# compiled output
+/dist/
+
+# dependencies
+node_modules
+
+# IntelliJ
+/out/
+
+# End of https://www.gitignore.io/api/webstorm
+
+yarn-error.log
+
+/types
