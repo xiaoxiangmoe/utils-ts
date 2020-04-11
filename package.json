@@ -1,26 +1,26 @@
 {
   "name": "utils-ts",
-  "version": "0.1.0-alpha.0",
+  "version": "0.1.0-alpha.1",
   "repository": "https://github.com/xiaoxiangmoe/utils-ts.git",
   "author": "ZHAO Jinxiang <xiaoxiangmoe@gmail.com>",
   "license": "MIT",
-  "types": "types/index.d.ts",
-  "main": "dist/index.cjs",
-  "module": "dist/index.mjs",
+  "types": "dist/utils-ts.d.ts",
+  "main": "dist/utils-ts.cjs",
+  "module": "dist/utils-ts.mjs",
   "exports": {
     ".": {
-      "require": "dist/index.cjs",
-      "import": "dist/index.mjs"
+      "import": "dist/utils-ts.mjs",
+      "require": "dist/utils-ts.cjs",
+      "default": "dist/utils-ts.cjs"
     }
   },
   "files": [
     "src",
-    "dist",
-    "types"
+    "dist"
   ],
   "scripts": {
     "lint": "prettier --check 'src/**/*.ts'",
-    "build": "tsc && rollup --config ./rollup.config.mjs",
+    "build": "rollup --config ./rollup.config.mjs && tsc && api-extractor run --local --verbose --config api-extractor.jsonc ",
     "prepublish": "yarn lint && yarn build"
   },
   "dependencies": {},
@@ -29,6 +29,7 @@
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-typescript": "^7.9.0",
+    "@microsoft/api-extractor": "^7.7.13",
     "@rollup/plugin-node-resolve": "^7.1.1",
     "prettier": "^2.0.2",
     "rollup": "^2.2.0",

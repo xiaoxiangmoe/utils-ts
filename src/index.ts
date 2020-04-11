@@ -1,5 +1,4 @@
 export * from './enum';
-export * from './flat-infinity';
 export * from './identity';
 export * from './is-not-nil';
 export * from './is-readonly-array';
