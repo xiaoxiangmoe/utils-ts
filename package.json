@@ -1,17 +1,17 @@
 {
   "name": "utils-ts",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0-alpha.3",
   "repository": "https://github.com/xiaoxiangmoe/utils-ts.git",
   "author": "ZHAO Jinxiang <xiaoxiangmoe@gmail.com>",
   "license": "MIT",
-  "types": "dist/utils-ts.d.ts",
-  "main": "dist/utils-ts.cjs",
-  "module": "dist/utils-ts.mjs",
+  "types": "./dist/utils-ts.d.ts",
+  "main": "./dist/utils-ts.cjs",
+  "module": "./dist/utils-ts.mjs",
   "exports": {
     ".": {
-      "import": "dist/utils-ts.mjs",
-      "require": "dist/utils-ts.cjs",
-      "default": "dist/utils-ts.cjs"
+      "import": "./dist/utils-ts.mjs",
+      "require": "./dist/utils-ts.cjs",
+      "default": "./dist/utils-ts.cjs"
     }
   },
   "files": [
