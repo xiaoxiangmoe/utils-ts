@@ -11,9 +11,11 @@ export function enumEntriesMutable<E>(e: E): Array<MutableEntryOf<E, keyof E>> {
   const plainStringEnum = entries.every(
     ([key, value]) => typeof value === 'string',
   );
-  return (plainStringEnum
-    ? entries
-    : entries.filter(([k, v]) => typeof v !== 'string')) as any;
+  return (
+    plainStringEnum
+      ? entries
+      : entries.filter(([k, v]) => typeof v !== 'string')
+  ) as any;
 }
 
 /**

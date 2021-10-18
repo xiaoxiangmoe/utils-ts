@@ -2,13 +2,9 @@
   "compilerOptions": {
     "strict": true,
     "declaration": true,
-    "esModuleInterop": true,
-    "module": "esnext",
-    "target": "esnext",
-    "moduleResolution": "node",
-    "lib": ["dom", "esnext"],
-    "outDir": "types",
-    "emitDeclarationOnly": true,
-    "resolveJsonModule": true
+    "moduleResolution": "nodenext",
+    "module": "nodenext",
+    "lib": ["esnext"],
+    "outDir": "dist/esm"
   }
 }
